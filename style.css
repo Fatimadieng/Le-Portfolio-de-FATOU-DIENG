@@ -1,0 +1,179 @@
+/* Variables de couleurs */
+:root {
+    --primary-color: #4D9FFF; /* Couleur principale */
+    --secondary-color: #FFB54D; /* Couleur secondaire */
+    --dark-background: #1A1A1A; /* Couleur de fond sombre */
+    --light-background: #F2F2F2; /* Couleur de fond clair */
+    --text-color: #333333; /* Couleur du texte */
+}
+
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-background);
+    color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Section d'accueil */
+#accueil {
+    text-align: center;
+    padding: 60px 0;
+    background-color: var(--light-background);
+}
+
+#accueil h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+#accueil .lead {
+    font-size: 1.2em;
+}
+
+/* Compétences et expériences */
+.skill-icon {
+    width: 30px; /* Ajustez la taille de l'icône */
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+    vertical-align: middle; /* Aligner verticalement avec le texte */
+}
+
+.experience-icon {
+    width: 30px; /* Ajustez la taille de l'icône */
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+    vertical-align: middle; /* Aligner verticalement avec le texte */
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 40px 0;
+    background-color: #FFFFFF;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Carte de projet */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    border-radius: 10px 10px 0 0; /* Arrondir le haut de l'image */
+}
+
+/* Blog */
+#blog {
+    padding: 40px 0;
+    background-color: var(--light-background);
+}
+
+#blog h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-background);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .social-links {
+    margin: 15px 0;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #fff;
+}
+
+footer .footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    #accueil h1 {
+        font-size: 2em;
+    }
+
+    #accueil .lead {
+        font-size: 1em;
+    }
+}
+
